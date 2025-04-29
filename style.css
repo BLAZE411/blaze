@@ -1,0 +1,28 @@
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+button{
+    border: none;
+    padding: 20px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    word-spacing: 2px;
+}
+button::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 69px;
+    
+    border-radius: 1000px;
+    background: linear-gradient(aqua,blue, red);
+    z-index: -1;
+}
+button:hover{
+    background: linear-gradient(aqua,blue, red);
+}
